@@ -1,6 +1,6 @@
 body{
     background-color: #111111;
-    background-image: url('/Imagens/fundo.jpg');
+    background-image: url('/projeto/templates/static/Imagens/fundo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative; 
