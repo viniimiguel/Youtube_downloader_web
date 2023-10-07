@@ -1,0 +1,36 @@
+body{
+    background-color: #111111;
+    background-image: url('/venv/Imagens/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+}
+body::after {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    pointer-events: none; 
+}
+
+nav h1{
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: fit-content;
+}
+.Campo {
+    color: white;
+    margin: 0 auto; 
+    width: fit-content;
+}
+.baixa {
+    padding: 5px;
+    width: 500px;
+}
+.baixar:hover{
+    background-color: aquamarine;
+}
