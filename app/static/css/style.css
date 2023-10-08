@@ -15,6 +15,9 @@ body::after {
     background: rgba(0, 0, 0, 0.1); 
     pointer-events: none; 
 }
+.disq{
+    background: black;
+}
 
 nav h1{
     color: white;
@@ -31,6 +34,7 @@ nav h1{
     padding: 5px;
     width: 500px;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 .baixar:hover{
     background-color: aquamarine;
