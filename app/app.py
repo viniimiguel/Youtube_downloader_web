@@ -29,28 +29,28 @@ class Yt():
             result = ydl.extract_info(link, download=True)
             return result
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        link = request.form['link']
-        option = request.form['option']
-        youtube = Yt()
+    @app.route('/', methods=['GET', 'POST'])
+    def index():
+        if request.method == 'POST':
+            link = request.form['link']
+            option = request.form['option']
+            youtube = Yt()
 
-        if option == '1':
-            result = youtube.download_video(link)
-        elif option == '2':
-            result = youtube.download_audio(link)
-        else:
-            return "Opção inválida"
+            if option == '1':
+                result = youtube.download_video(link)
+            elif option == '2':
+                result = youtube.download_audio(link)
+            else:
+                return "Opção inválida"
 
-        if 'entries' in result:
-            entries = result['entries']
-        else:
-            entries = [result]
+            if 'entries' in result:
+                entries = result['entries']
+            else:
+                entries = [result]
 
-        return render_template('result.html', entries=entries)
+            return render_template('result.html', entries=entries)
 
-    return render_template('index.html')
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
