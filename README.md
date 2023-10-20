@@ -1,4 +1,4 @@
-# Youtube_downloader_web
+# Youtube_downloader_web <img align="center" alt="html5" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"/> <img align="center" alt="html5" src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/> <img align="center" alt="html5" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
 
 ## Baixador de vídeos e musicas do YouTube desenvolvido por mim.
 
